@@ -8,7 +8,7 @@ function Hanoi(num,fro,to){
 		}else{
 			move(num-1,fro,str.replace(fro,'').replace(to,''));
 			step += (fro+"=>"+to+" ");
-			move(num-1,str.replace(fro,'').replace(to,''),fro)
+			move(num-1,str.replace(fro,'').replace(to,''),to)
 		} 
 	}
 	move(num,fro,to);
